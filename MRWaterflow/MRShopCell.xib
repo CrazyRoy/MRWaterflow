@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MRShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="148"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V8K-Ma-MWF">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="148"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJn-ha-srI">
+                        <rect key="frame" x="0.0" y="118" width="116" height="30"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.49539331896551725" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="94i-zd-2L9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="V8K-Ma-MWF" secondAttribute="bottom" id="28x-ED-kDr"/>
+                <constraint firstAttribute="trailing" secondItem="JJn-ha-srI" secondAttribute="trailing" id="93k-8l-5hg"/>
+                <constraint firstItem="V8K-Ma-MWF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Pa8-d0-EiQ"/>
+                <constraint firstItem="V8K-Ma-MWF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fg6-O7-kga"/>
+                <constraint firstAttribute="trailing" secondItem="V8K-Ma-MWF" secondAttribute="trailing" id="lTH-NT-Lyp"/>
+                <constraint firstAttribute="bottom" secondItem="JJn-ha-srI" secondAttribute="bottom" id="mwN-OT-lMC"/>
+                <constraint firstItem="JJn-ha-srI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zp1-qE-8lM"/>
+            </constraints>
+            <size key="customSize" width="116" height="148"/>
+            <connections>
+                <outlet property="imageView" destination="V8K-Ma-MWF" id="G2U-oD-tsF"/>
+                <outlet property="priceLabel" destination="JJn-ha-srI" id="xzg-V6-Xbs"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="308"/>
+        </collectionViewCell>
+    </objects>
+</document>
